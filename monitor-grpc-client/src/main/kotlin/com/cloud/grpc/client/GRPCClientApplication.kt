@@ -1,4 +1,4 @@
-package com.cloud.eurekaFeign
+package com.cloud.grpc.client
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -8,8 +8,8 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
-class EurekaFeignApplication
+class GRPCClientApplication
 
 fun main(args: Array<String>) {
-    SpringApplication.run(EurekaFeignApplication::class.java, *args)
+    SpringApplication.run(GRPCClientApplication::class.java, *args)
 }

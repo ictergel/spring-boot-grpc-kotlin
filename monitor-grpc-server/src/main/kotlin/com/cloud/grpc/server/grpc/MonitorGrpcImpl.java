@@ -1,4 +1,4 @@
-package com.cloud.eurekaClient.grpc;
+package com.cloud.grpc.server.grpc;
 
 import com.chanct.monitor.grpc.lib.MonitorGrpc;
 import com.chanct.monitor.grpc.lib.MonitorReply;

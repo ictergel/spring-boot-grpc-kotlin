@@ -1,4 +1,4 @@
-package com.cloud.eurekaClient.controller
+package com.cloud.grpc.server.controller
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.web.bind.annotation.RequestMapping

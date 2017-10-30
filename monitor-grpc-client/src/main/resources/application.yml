@@ -3,7 +3,15 @@ eureka:
     serviceUrl:
       defaultZone: http://cloudServer:8761/eureka/
 server:
-  port: 8765
+  port: 8388
+  servlet:
+    context-path: /monitor
 spring:
   application:
-    name: helloService
+    name: monitor-grpc-client
+
+grpc:
+  client:
+    monitor-grpc-server:
+      host[0]: localhost
+      port[0]: 50051

@@ -1,4 +1,4 @@
-package com.cloud.eurekaFeign
+package com.cloud.grpc.server
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
 @SpringBootTest
-class EurekaFeignApplicationTests {
+class EurekaClientApplicationTests {
 
 	@Test
 	fun contextLoads() {
