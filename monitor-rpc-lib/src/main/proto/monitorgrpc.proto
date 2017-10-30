@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.chanct.monitor.grpc.lib";
+option java_outer_classname = "MonitorGRPCProto";
+option objc_class_prefix = "MGP";
+
+package com.chanct.monitor.grpc.lib;
+
+// The greeting service definition.
+service Monitor {
+    // Sends a greeting
+    rpc SendMsg (MonitorRequest) returns (MonitorReply) {
+    }
+}
+
+// The request message containing the user's name.
+message MonitorRequest {
+    string name = 1;
+}
+
+// The response message containing the greetings
+message MonitorReply {
+    string message = 1;
+}

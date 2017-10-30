@@ -1,0 +1,15 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://cloudServer:8761/eureka/
+server:
+  port: 8762
+
+grpc:
+  server:
+    port: 50051
+    host: localhost
+
+spring:
+  application:
+    name: monitor-grpc-server
